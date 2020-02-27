@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Project</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <!-- Start of Home page -->
+    <div data-role="page"  id="home">
+            <!--  Home page header -->
+            <div data-role="header" data-theme='b'>
+                <h1>Open Concept Interior Design</h1>
+                <div data-role="navbar" data-grid="c">
+                    <ul>
+                        <li><a href="#home" class="ui-button-active">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <!--  Home page content -->
+            <div data-role="content" data-theme='e'>
+                <h2>Welcome to my interior design website. This website was inspired by 
+                    the interior design business that I'm starting for my Business class at 
+                    Bellevue college. When this website is finished it will display a list of services,
+                    display customer reviews, intake new reviews, and allow prospective 
+                    customers to schedule a call with one our interior design consultants.
+                </h2>
+            </div>
+              
+            <!--  Home page footer -->
+            <div data-role="footer" data-theme='b'>
+                <h4>Copyrigtht 2020 by Alejandra Valencia</h4>
+            </div>
+        </div>
+
+    <!-- Start of services page -->
+    <div data-role="page"  id="services">
+        <!--  services page header -->
+        <div data-role="header" data-theme='b'>
+            <h1>Services</h1>
+            <div data-role="navbar" data-grid="c">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services" class="ui-button-active">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#reviews">Reviews</a></li> 
+                </ul>
+            </div>
+        </div>
+        <!--  services page page content -->
+        <p>Choose a service</p>
+        <div class="btn-group">
+            <button id="kitchen">Kitchen</button>
+            <button id="bathroom">Bathroom</button>
+            <button id="famroom">Family Room</button>
+        </div>
+          
+        <!--  services page page footer -->
+            <div data-role="footer" data-theme='b'>
+                <h4>Copyrigtht 2020 by Alejandra Valencia</h4>
+            </div>
+        </div>
+
+    <!--  start of contact page -->
+    <div data-role="page"  id="contact">
+        <!--  contact page header -->
+        <div data-role="header" data-theme='b'>
+        
+            <h1>Contact Us</h1>
+            <div data-role="navbar" data-grid="c">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact" class="ui-button-active">Contact Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>   
+            
+        </div> 
+
+        <!--  contact page content -->
+        <p>Submit the form below to schedule a consultation</p>
+        <!--  name txt box -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="">
+        <!--  email txt box -->
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" value="">
+        <!--  phone txt box -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" name="phone" id="phone" value="">
+        <!--  date picker -->
+        <label for="date">Date:</label>
+        <input type="text" name="date" id="date" value="">
+        <!--  time of day txt box -->
+        <label for="time">Time:</label>
+        <input type="text" name="time" id="time" value="">
+        <!--  submit btn -->
+        <a href="#" data-role="button" data-theme="a" data-inline="true">Submit</a>
+
+        <!--  contact page footer -->
+        <div data-role="footer" data-theme='b'>
+            <h4>Copyrigtht 2020 by Alejandra Valencia</h4>
+        </div>
+    </div>
+
+
+    <!-- Start of review page -->
+        <div data-role="page"  id="reviews">
+            <!--  review page header -->
+            <div data-role="header" data-theme='b'>
+                <h1>Reviews</h1>
+                <div data-role="navbar" data-grid="c">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact" >Contact Us</a></li>
+                        <li><a href="#reviews" class="ui-button-active">Reviews</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <!--  review page content -->
+            <p>Leave a review</p>
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+            <q>sample review 1</q>
+            <p class="author">- author 1</p>
+            </div>
+        
+            <div class="mySlides">
+            <q>sample review 2</q>
+            <p class="author">- author 2</p>
+            </div>
+        
+            <div class="mySlides">
+            <q>sample review 3.</q>
+            <p class="author">- author 3</p>
+            </div>
+        
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+      
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+              
+            <!--  review page footer -->
+            <div data-role="footer" data-theme='b'>
+                <h4>Copyrigtht 2020 by Alejandra Valencia</h4>
+            </div>
+        </div>
+
+    
+     
+
+</body>
+</html>
